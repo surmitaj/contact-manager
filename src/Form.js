@@ -10,7 +10,7 @@ function Form({index, contacts, viewContacts, handleEdit, handleAdd}) {
             return
         }
         setIsError(false)
-        if(index != 'add') {
+        if(index !== 'add') {
             handleEdit(index, contactName, contactNum)
         } else {
             handleAdd(contactName, contactNum)
